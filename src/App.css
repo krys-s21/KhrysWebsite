@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500&display=swap');
+
+.App{
+    font-family: 'Inter', sans-serif;
+    color: #222222;
+    font-size:1.5rem;
+    font-weight: 400;
+}
+.textWhite{
+    color:white;
+}
+
+.titleFont,h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;  
+    font-weight: 400;
+}
+h1,.h1{
+    font-size:4.375rem;
+}
+h2,.h2{
+    font-size:3.75rem;
+}
+h3,.h3{
+    font-size:2.125rem;
+}
+h4,.h4{
+    font-size:1.5rem;
+}
+h5,.h5{
+    font-size:1.188rem;
+}
+h6,.h6{
+    font-size:1rem;
+}
+h1 strong,.h1 strong{
+    font-size:4.5rem;
+    font-weight: 500;
+}
+h2 strong,.h2 strong{
+    font-size:4rem;
+}
+.container{
+    max-width: 80rem;
+    margin:0 auto;
+}
