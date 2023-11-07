@@ -17,7 +17,7 @@ const Navbar = () => {
   }
   const listItemBaseStyle = {
     display: "inline-block",
-    padding: "12px",
+    padding: "12px 15px",
     fontSize: "1.188rem",
     borderRadius: "24px",
     margin: "0 5px",

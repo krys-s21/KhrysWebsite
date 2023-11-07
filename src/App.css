@@ -6,13 +6,13 @@
     font-size:1.5rem;
     font-weight: 400;
 }
-.textWhite{
-    color:white;
-}
-
+/* Typography*/
 .titleFont,h1,h2,h3,h4,h5,h6{
     font-family: 'Poppins', sans-serif;  
-    font-weight: 400;
+    font-weight: 500;
+}
+h1,h2,h3{
+    margin-bottom:30px;
 }
 h1,.h1{
     font-size:4.375rem;
@@ -32,13 +32,30 @@ h5,.h5{
 h6,.h6{
     font-size:1rem;
 }
-h1 strong,.h1 strong{
-    font-size:4.5rem;
-    font-weight: 500;
+p{
+    line-height:1.7;
 }
-h2 strong,.h2 strong{
+.extraH1{
+    font-size:4.5rem;
+}
+.extraH2{
     font-size:4rem;
 }
+.textWhite{
+    color:white;
+}
+.center{
+    text-align:center;
+}
+.gradientText{
+    background-image: url(/assets/heroImage.svg);
+    background-position:0% 8%;
+    background-size:initial;
+    -webkit-background-clip: text;
+	background-clip: text;
+    color:transparent;
+}
+/* Sections */
 .container{
     max-width: 80rem;
     margin:0 auto;

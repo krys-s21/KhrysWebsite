@@ -1,15 +1,21 @@
 import React from "react"
-import Navbar from "./Navbar"
+import Navbar from "../Navbar"
+import heroImage from "../../../assets/heroImage.svg"
 
 const HeroWithNavbar = () => {
   const heroStyles = {
     margin: "15px",
     borderRadius: "30px",
-    backgroundColor: "purple",
+    backgroundImage: `url(${heroImage})`,
+    backgroundRepeat: "no-repat",
+    backgroundSize: "cover",
   }
   const textWrapperStyles = {
     paddingTop: "50px",
     paddingBottom: "120px",
+  }
+  const titleStyles = {
+    fontWeight: "400",
   }
   const heyStyles = {
     display: "block",
@@ -32,7 +38,7 @@ const HeroWithNavbar = () => {
       <div className="container">
         <Navbar />
         <div className="textWhite" style={textWrapperStyles}>
-          <h1>
+          <h1 style={titleStyles}>
             <span style={heyStyles}>Hey there!</span>
             <div>
               I'm
