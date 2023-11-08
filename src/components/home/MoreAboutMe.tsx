@@ -3,6 +3,7 @@ import React from "react"
 const MoreAboutMe = () => {
   const sectionStyles = {
     margin: "120px 0",
+    marginBottom: "150px",
   }
   const textStyles = {
     padding: "0 50px",

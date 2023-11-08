@@ -8,6 +8,7 @@ const HeroWithNavbar = () => {
     borderRadius: "30px",
     backgroundImage: `url(${heroImage})`,
     backgroundRepeat: "no-repat",
+    backgroundPosition: "center",
     backgroundSize: "cover",
   }
   const textWrapperStyles = {

@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500&display=swap');
 .App{
+    font-size:1.5rem;
+}
+html, body,.App{
     font-family: 'Inter', sans-serif;
     color: #222222;
-    font-size:1.5rem;
     font-weight: 400;
+    background-color: #FAFAFA;
+}
+span, div, p, a, button{
+    font-family:inherit;
 }
 /* Typography*/
 .titleFont,h1,h2,h3,h4,h5,h6{
@@ -44,6 +49,14 @@ p{
 .textWhite{
     color:white;
 }
+a{
+    color:#FB6694;
+    text-decoration: underline;
+    cursor:pointer;
+}
+a:hover, a:focus{
+    text-decoration: none;
+}
 .center{
     text-align:center;
 }
@@ -55,6 +68,23 @@ p{
 	background-clip: text;
     color:transparent;
 }
+/* Components */
+.btn{
+    color:white;
+    font-size:1.188rem;
+    font-weight: 500;
+    padding:1rem 2rem;
+    background-color:#A68EE4;
+    border-radius:30px;
+    outline: none;
+    border: none;
+    cursor:pointer;
+    transition: .2s ease-in-out 0s;
+}
+.btn:hover, .btn:focus{
+    transform: scale(1.15);
+}
+
 /* Sections */
 .container{
     max-width: 80rem;

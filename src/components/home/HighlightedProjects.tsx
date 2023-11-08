@@ -1,20 +1,58 @@
 import React from "react"
-
+import ProjectItem from "../projects/ProjectItem"
+const projects: Project[] = [
+  {
+    id: 1,
+    name: "Free Society",
+    image: "/assets/projects/YMC.png",
+    shortDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a massa neque Lorem ipsum dolo",
+    description: "",
+  },
+  {
+    id: 2,
+    name: "YMC",
+    image: "/assets/projects/YMC.png",
+    shortDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a massa neque Lorem ipsum dolo",
+    description: "",
+  },
+  {
+    id: 3,
+    name: "La Piadina",
+    image: "/assets/projects/YMC.png",
+    shortDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a massa neque Lorem ipsum dolo",
+    description: "",
+  },
+]
+const sectionStyles = {
+  margin: "120px 0",
+  marginBottom: "150px",
+}
+const projectsWrapperStyles = {
+  display: "flex",
+  justifyContent: "center",
+  flexWrap: "wrap",
+}
+const titleStyles = {
+  marginBottom: "50px",
+}
 const HighlightedProjects = () => {
-  const sectionStyles = {
-    margin: "120px 0",
-  }
-  const gradientTitle = {
-    marginBottom: "30px",
-  }
-  const textStyles = {
-    padding: "0 50px",
-  }
   return (
     <section style={sectionStyles}>
       <div className="container">
-        <h2 className="center">Some of my projects</h2>
-        <div>Projects</div>
+        <h2 className="center" style={titleStyles}>
+          Some of my projects
+        </h2>
+      </div>
+      <div style={projectsWrapperStyles}>
+        {projects &&
+          projects.map((project) => <ProjectItem project={project} />)}
+      </div>
+      <div className="center">
+        If you'd like to discover more projects, please take a moment to review{" "}
+        <a>my portfolio</a>.
       </div>
     </section>
   )
