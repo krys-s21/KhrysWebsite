@@ -38,6 +38,9 @@ const projectsWrapperStyles = {
 const titleStyles = {
   marginBottom: "50px",
 }
+const footerTextStyles = {
+  lineHeight: "1.6",
+}
 const HighlightedProjects = () => {
   return (
     <section style={sectionStyles}>
@@ -50,9 +53,10 @@ const HighlightedProjects = () => {
         {projects &&
           projects.map((project) => <ProjectItem project={project} />)}
       </div>
-      <div className="center">
-        If you'd like to discover more projects, please take a moment to review{" "}
-        <a>my portfolio</a>.
+      <div className="center" style={footerTextStyles}>
+        Feeling curious for more projects?
+        <br />
+        Take a moment to wander through <a>my portfolio</a>.
       </div>
     </section>
   )
