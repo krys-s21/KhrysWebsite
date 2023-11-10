@@ -60,6 +60,12 @@ a:hover, a:focus{
 .center{
     text-align:center;
 }
+.font-24{
+    font-size: 1.5rem;
+}
+.font-regular{
+    font-weight: 400;
+}
 .gradientText{
     background-image: url(/assets/heroImage.svg);
     background-position:0% 8%;
@@ -84,9 +90,23 @@ a:hover, a:focus{
 .btn:hover, .btn:focus{
     transform: scale(1.15);
 }
-
+.dot{
+    display:inline-block;
+    width:25px;
+    height:25px;
+    margin:1.5px;
+    border-radius:50%;
+    background-color: #D9D9D9;
+}
+.purple{
+    background-color:#A68EE4;
+}
 /* Sections */
 .container{
     max-width: 80rem;
     margin:0 auto;
+    padding:0 50px;
+}
+.maxWidthFull{
+    max-width: 100%;
 }

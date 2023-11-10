@@ -51,7 +51,9 @@ const HighlightedProjects = () => {
       </div>
       <div style={projectsWrapperStyles}>
         {projects &&
-          projects.map((project) => <ProjectItem project={project} />)}
+          projects.map((project) => (
+            <ProjectItem key={project.id} project={project} />
+          ))}
       </div>
       <div className="center" style={footerTextStyles}>
         Feeling curious for more projects?
