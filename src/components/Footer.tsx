@@ -1,0 +1,94 @@
+import React from "react"
+import borderGradient from "../../assets/heroImage.svg"
+import linkedin from "../../assets/linkedin.svg"
+import github from "../../assets/github.svg"
+
+const socialAccounts = [
+  {
+    id: 1,
+    image: linkedin,
+    url: "www.linkedin.com/in/khrystyna-quirino",
+    name: "Linkedin",
+  },
+  { id: 2, image: github, url: "https://github.com/krys-s21", name: "Github" },
+]
+const footerStyles = {
+  marginTop: "150px",
+  overflow: "hidden",
+}
+const wrapperStyle = {
+  width: "100%",
+  transform: "translateY(40px)",
+}
+const borderStyles = {
+  borderRadius: "30px",
+  padding: "30px",
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  backgroundPosition: "50% 90%",
+  margin: "0 25px",
+  marginBottom: "0px",
+  backgroundImage: `url(${borderGradient})`,
+}
+const itemStyle = {
+  backgroundColor: "white",
+  padding: "30px",
+  paddingBottom: "50px",
+  textAlign: "center",
+  borderRadius: "12px",
+  minHeight: "400px",
+}
+const titleStyles = {
+  marginTop: "80px",
+  fontSize: "3.25rem",
+}
+const btnStyles = {
+  marginTop: "35px",
+}
+const socialWrapperStyles = {
+  marginTop: "60px",
+  marginBottom: "25px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+}
+const socialImageStyles = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: "5px",
+  margin: "5px",
+}
+const copyrigthStyles = {
+  fontFamily: "Poppins",
+  fontSize: "1rem",
+  marginBottom: "50px",
+}
+const Footer = () => {
+  return (
+    <footer style={footerStyles}>
+      <div style={wrapperStyle}>
+        <div style={borderStyles}>
+          <div style={itemStyle}>
+            <h2 style={titleStyles}>Did you enjoy what you've seen?</h2>
+            <button className="btn btn-xl btn-cta" style={btnStyles}>
+              Let's talk!
+            </button>
+            <div style={socialWrapperStyles}>
+              {socialAccounts.map((social) => (
+                <a href={social.url} key={social.id} style={socialImageStyles}>
+                  <img src={social.image} alt={social.name} />
+                </a>
+              ))}
+            </div>
+            <div style={copyrigthStyles}>
+              <p>© 2023 Krystyna Quirino | All right reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer

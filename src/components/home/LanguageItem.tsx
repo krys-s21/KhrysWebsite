@@ -1,6 +1,7 @@
 import React from "react"
 
 export interface Language {
+  id: number
   name: string
   level: string
   levelDots: number
@@ -8,12 +9,12 @@ export interface Language {
 const itemWrapperStyles = {
   width: "25%",
   minWidth: "320px",
+  maxWidth: "400px",
 }
 const itemStyles = {
   padding: "0 20px",
   textAlign: "center",
 }
-const languageDots = [1, 1, 1, 1, 1, 1, 0, 0, 0]
 
 const LanguageItem: React.FC<{
   language: Language
@@ -31,8 +32,8 @@ const LanguageItem: React.FC<{
       <div style={itemStyles}>
         <h3>{language.name}</h3>
         <div className="center">
-          {getDotArray().map((dot) => (
-            <div className={`dot ${dot === 1 && "purple"}`}></div>
+          {getDotArray().map((dot, i) => (
+            <div className={`dot ${dot === 1 && "purple"}`} key={i}></div>
           ))}
         </div>
         <h4 className="font-regular">{language.level}</h4>

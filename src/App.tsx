@@ -6,6 +6,7 @@ import HighlightedProjects from "./components/home/HighlightedProjects"
 import MyTechStack from "./components/home/MyTechStack"
 import MyHumanSkills from "./components/home/MyHumanSkills"
 import MyLanguages from "./components/home/MyLanguages"
+import Footer from "./components/Footer"
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
       <MyTechStack />
       <MyHumanSkills />
       <MyLanguages />
+      <Footer />
     </div>
   )
 }

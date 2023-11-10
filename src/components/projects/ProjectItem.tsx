@@ -59,7 +59,7 @@ const ProjectItem: React.FC<{ project: Project }> = ({ project }) => {
             {project.name}
           </h3>
           <p>{project.shortDescription.slice(0, 80)}...</p>
-          <button className="btn font-24" style={btnStyles}>
+          <button className="btn" style={btnStyles}>
             See more
           </button>
         </div>

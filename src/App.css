@@ -60,12 +60,8 @@ a:hover, a:focus{
 .center{
     text-align:center;
 }
-.font-24{
-    font-size: 1.5rem;
-}
-.font-regular{
-    font-weight: 400;
-}
+
+
 .gradientText{
     background-image: url(/assets/heroImage.svg);
     background-position:0% 8%;
@@ -76,6 +72,7 @@ a:hover, a:focus{
 }
 /* Components */
 .btn{
+    font-family: "Poppins", sans-serif;
     color:white;
     font-size:1.188rem;
     font-weight: 500;
@@ -86,6 +83,21 @@ a:hover, a:focus{
     border: none;
     cursor:pointer;
     transition: .2s ease-in-out 0s;
+}
+.btn-xl{
+    font-size:1.5rem;
+    padding:1.25rem 2.5rem;
+    border-radius:38px;
+}
+.btn-cta{
+    padding:1.25rem 3.75rem;
+    background-color:#F23E84;
+}
+.font-24{
+    font-size: 1.5rem;
+}
+.font-regular{
+    font-weight: 400;
 }
 .btn:hover, .btn:focus{
     transform: scale(1.15);

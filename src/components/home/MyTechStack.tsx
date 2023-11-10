@@ -5,7 +5,7 @@ const MyHumanSkills = () => {
   const sectionStyles = {
     backgroundColor: "white",
     paddingTop: "40px",
-    paddingBottom: "30px",
+    paddingBottom: "50px",
   }
   const titleStyles = {
     marginBottom: "50px",
@@ -27,7 +27,7 @@ const MyHumanSkills = () => {
         />
         <div className="center" style={footerTextStyles}>
           <p>So far impressed? Find more details about my experience.</p>
-          <button className="btn">Check my CV</button>
+          <button className="btn btn-xl">Check my CV</button>
         </div>
       </div>
     </section>

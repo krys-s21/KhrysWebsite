@@ -14,7 +14,7 @@ const MoreAboutMe = () => {
         <h2 className="extraH2 center gradientText">More about me</h2>
         <p className="center" style={textStyles}>
           Inspired by a childhood love for programming, I've shaped my skills
-          through a degree in computer engineering and and a commitment to
+          through a degree in computer engineering and a commitment to
           continuous learning. From the highs of diverse team experiences to the
           meaningful impact of national and international projects, my journey
           has found its heartbeat in Frontend. I pour my soul into crafting not
