@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react"
-import borderGradient from "../../../assets/heroImage.svg"
-import borderGradientRotated from "../../../assets/heroImageRotated.svg"
-import textGradient from "../../../assets/textGradient.png"
+import borderGradient from "/assets/images/heroImage.svg"
+import borderGradientRotated from "/assets/images/heroImageRotated.svg"
+import textGradient from "/assets/images/textGradient.png"
 import { useMediaQuery } from "usehooks-ts"
 
 export interface Project {

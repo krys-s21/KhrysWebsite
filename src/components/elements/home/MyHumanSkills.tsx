@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react"
-import textGradient from "../../../assets/textGradient.png"
+import textGradient from "/assets/images/textGradient.png"
 import { useMediaQuery } from "usehooks-ts"
 
 const softSkills = [

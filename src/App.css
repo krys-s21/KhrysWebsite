@@ -61,7 +61,7 @@ a:hover, a:focus{
 
 
 .gradientText{
-    background-image: url(/assets/heroImage.svg);
+    background-image: url(/assets/images/heroImage.svg);
     background-position:0% 8%;
     background-size:initial;
     -webkit-background-clip: text;

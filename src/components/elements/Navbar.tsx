@@ -1,5 +1,7 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import { useMediaQuery } from "usehooks-ts"
+import { linkedinProfile } from "../../constants"
 
 const Navbar = () => {
   const matchesMin768 = useMediaQuery("(min-width: 768px)")
@@ -45,8 +47,12 @@ const Navbar = () => {
       <ul style={listStyles}>
         <li style={listItemSelectedStyles}>About me</li>
         <li style={listItemStyles}>My Portfolio</li>
-        <li style={listItemStyles}>My CV</li>
-        <li style={listItemStyles}>Contact me</li>
+        <a href="/assets/files/CV_Khrys_052025.pdf" download>
+          <li style={listItemStyles}>My CV</li>
+        </a>
+        <Link to={linkedinProfile}>
+          <li style={listItemStyles}>Contact me</li>
+        </Link>
       </ul>
     </div>
   )

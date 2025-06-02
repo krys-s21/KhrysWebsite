@@ -1,17 +1,23 @@
 import React, { CSSProperties } from "react"
-import borderGradient from "../../assets/heroImage.svg"
-import linkedin from "../../assets/linkedin.svg"
-import github from "../../assets/github.svg"
+import borderGradient from "/assets/images/heroImage.svg"
+import linkedin from "/assets/images/linkedin.svg"
+import github from "/assets/images/github.svg"
 import { useMediaQuery } from "usehooks-ts"
+import { githubProfile, linkedinProfile } from "../../constants"
 
 const socialAccounts = [
   {
     id: 1,
     image: linkedin,
-    url: "www.linkedin.com/in/khrystyna-quirino",
+    url: linkedinProfile,
     name: "Linkedin",
   },
-  { id: 2, image: github, url: "https://github.com/krys-s21", name: "Github" },
+  {
+    id: 2,
+    image: github,
+    url: githubProfile,
+    name: "Github",
+  },
 ]
 
 const wrapperStyle = {

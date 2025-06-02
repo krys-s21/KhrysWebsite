@@ -1,5 +1,5 @@
 import React from "react"
-import techStack from "../../../assets/techStack.svg"
+import techStack from "/assets/images/techStack.svg"
 import { useMediaQuery } from "usehooks-ts"
 
 const sectionStyles = {
@@ -36,7 +36,9 @@ const MyHumanSkills = () => {
         />
         <div className="center" style={footerTextStyles}>
           <p>So far impressed? Find more details about my experience.</p>
-          <button className="btn btn-xl">Check my CV</button>
+          <a href="/assets/files/CV_Khrys_052025.pdf" download>
+            <button className="btn btn-xl">Check my CV</button>
+          </a>
         </div>
       </div>
     </section>

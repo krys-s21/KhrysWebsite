@@ -1,6 +1,6 @@
 import React from "react"
 import Navbar from "../Navbar"
-import heroImage from "../../../assets/heroImage.svg"
+import heroImage from "/assets/images/heroImage.svg"
 import { useMediaQuery } from "usehooks-ts"
 
 const HeroWithNavbar = () => {

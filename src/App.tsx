@@ -1,22 +1,16 @@
 import React from "react"
 import "./App.css"
-import HeroWithNavbar from "./components/home/HeroWithNavbar"
-import MoreAboutMe from "./components/home/MoreAboutMe"
-import HighlightedProjects from "./components/home/HighlightedProjects"
-import MyTechStack from "./components/home/MyTechStack"
-import MyHumanSkills from "./components/home/MyHumanSkills"
-import MyLanguages from "./components/home/MyLanguages"
-import Footer from "./components/Footer"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Home } from "./components/pages/home"
+
 function App() {
   return (
     <div className="App">
-      <HeroWithNavbar />
-      <MoreAboutMe />
-      <HighlightedProjects />
-      <MyTechStack />
-      <MyHumanSkills />
-      <MyLanguages />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
