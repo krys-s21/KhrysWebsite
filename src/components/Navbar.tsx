@@ -1,12 +1,20 @@
 import React from "react"
+import { useMediaQuery } from "usehooks-ts"
 
 const Navbar = () => {
-  const navWrapperStyles = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "15px 20px",
-  }
+  const matchesMin768 = useMediaQuery("(min-width: 768px)")
+  const matchesMin992 = useMediaQuery("(min-width: 992px)")
+  const matchesMin1200 = useMediaQuery("(min-width: 1200px)")
+  const matchesMin1500 = useMediaQuery("(min-width: 1500px)")
+
+  const navWrapperStyles = matchesMin992
+    ? {
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "15px 20px",
+      }
+    : { display: "none" }
   const listStyles = {
     margin: "0",
     padding: "10px 8px",

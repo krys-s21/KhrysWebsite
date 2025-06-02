@@ -1,7 +1,8 @@
-import React from "react"
+import React, { CSSProperties } from "react"
 import borderGradient from "../../assets/heroImage.svg"
 import linkedin from "../../assets/linkedin.svg"
 import github from "../../assets/github.svg"
+import { useMediaQuery } from "usehooks-ts"
 
 const socialAccounts = [
   {
@@ -12,10 +13,7 @@ const socialAccounts = [
   },
   { id: 2, image: github, url: "https://github.com/krys-s21", name: "Github" },
 ]
-const footerStyles = {
-  marginTop: "150px",
-  overflow: "hidden",
-}
+
 const wrapperStyle = {
   width: "100%",
   transform: "translateY(40px)",
@@ -37,11 +35,8 @@ const itemStyle = {
   textAlign: "center",
   borderRadius: "12px",
   minHeight: "400px",
-}
-const titleStyles = {
-  marginTop: "80px",
-  fontSize: "3.25rem",
-}
+} as CSSProperties
+
 const btnStyles = {
   marginTop: "35px",
 }
@@ -65,6 +60,27 @@ const copyrigthStyles = {
   marginBottom: "50px",
 }
 const Footer = () => {
+  const matchesMin992 = useMediaQuery("(min-width: 992px)")
+
+  const footerStyles = matchesMin992
+    ? {
+        marginTop: "150px",
+        overflow: "hidden",
+      }
+    : {
+        marginTop: "50px",
+        overflow: "hidden",
+      }
+  const titleStyles = matchesMin992
+    ? {
+        marginTop: "80px",
+        fontSize: "3.25rem",
+      }
+    : {
+        marginTop: "50px",
+        fontSize: "1.875rem",
+      }
+
   return (
     <footer style={footerStyles}>
       <div style={wrapperStyle}>
@@ -82,7 +98,10 @@ const Footer = () => {
               ))}
             </div>
             <div style={copyrigthStyles}>
-              <p>© 2023 Krystyna Quirino | All right reserved</p>
+              <p>
+                © {new Date().getFullYear()} Khrystyna Quirino | All right
+                reserved
+              </p>
             </div>
           </div>
         </div>

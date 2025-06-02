@@ -1,5 +1,6 @@
-import React from "react"
+import React, { CSSProperties } from "react"
 import textGradient from "../../../assets/textGradient.png"
+import { useMediaQuery } from "usehooks-ts"
 
 const softSkills = [
   {
@@ -21,9 +22,7 @@ const softSkills = [
       "Embrace innovation, unleash imagination, and foster creativity through continuous learning and the pursuit of bold ideas.",
   },
 ]
-const sectionStyles = {
-  paddingTop: "120px",
-}
+
 const titleStyles = {
   marginBottom: "50px",
 }
@@ -32,17 +31,6 @@ const cardsWrapperStyles = {
   flexWrap: "wrap",
   justifyContent: "center",
 }
-const itemWrapperStyles = {
-  width: "33%",
-  maxWidth: "550px",
-}
-const itemStyles = {
-  backgroundColor: "white",
-  borderRadius: "30px",
-  boxShadow: "0 0 22px 3px rgba(0,0,0,0.03)",
-  margin: "0px 25px 70px",
-  padding: "20px 30px 30px",
-}
 const itemTitleStyles = {
   backgroundImage: `url(${textGradient})`,
   backgroundSize: "cover",
@@ -50,6 +38,52 @@ const itemTitleStyles = {
   marginBottom: "20px",
 }
 const MyTechStack = () => {
+  const matchesMin768 = useMediaQuery("(min-width: 768px)")
+  const matchesMin992 = useMediaQuery("(min-width: 992px)")
+
+  const sectionStyles = matchesMin768
+    ? {
+        paddingTop: "120px",
+      }
+    : { paddingTop: "40px" }
+
+  const cardsWrapperStyles = matchesMin992
+    ? ({
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+      } as CSSProperties)
+    : ({
+        flexDirection: "column",
+      } as CSSProperties)
+
+  const itemWrapperStyles = matchesMin992
+    ? {
+        width: "33%",
+        maxWidth: "550px",
+      }
+    : {
+        width: "100%",
+        maxWidth: "550px",
+        margin: "0 auto",
+      }
+
+  const itemStyles = matchesMin992
+    ? {
+        backgroundColor: "white",
+        borderRadius: "30px",
+        boxShadow: "0 0 22px 3px rgba(0,0,0,0.03)",
+        margin: "0px 25px 70px",
+        padding: "20px 30px 30px",
+      }
+    : {
+        backgroundColor: "white",
+        borderRadius: "30px",
+        boxShadow: "0 0 22px 3px rgba(0,0,0,0.03)",
+        margin: "0px 25px 40px",
+        padding: "20px 30px 30px",
+      }
+
   return (
     <section style={sectionStyles}>
       <h2 className="center" style={titleStyles}>

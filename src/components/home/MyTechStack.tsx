@@ -1,22 +1,31 @@
 import React from "react"
 import techStack from "../../../assets/techStack.svg"
+import { useMediaQuery } from "usehooks-ts"
+
+const sectionStyles = {
+  backgroundColor: "white",
+  paddingTop: "40px",
+  paddingBottom: "50px",
+}
+const titleStyles = {
+  marginBottom: "50px",
+}
 
 const MyHumanSkills = () => {
-  const sectionStyles = {
-    backgroundColor: "white",
-    paddingTop: "40px",
-    paddingBottom: "50px",
-  }
-  const titleStyles = {
-    marginBottom: "50px",
-  }
-  const footerTextStyles = {
-    marginTop: "120px",
-    lineHeight: "1.6",
-  }
+  const matchesMin768 = useMediaQuery("(min-width: 768px)")
+
+  const footerTextStyles = matchesMin768
+    ? {
+        marginTop: "120px",
+        lineHeight: "1.6",
+      }
+    : {
+        marginTop: "60px",
+        lineHeight: "1.6",
+      }
   return (
     <section style={sectionStyles}>
-      <div className="container">
+      <div className="smallContainer">
         <h2 className="center" style={titleStyles}>
           My Tech Stack
         </h2>

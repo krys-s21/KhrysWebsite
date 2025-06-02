@@ -1,5 +1,6 @@
-import React from "react"
+import React, { CSSProperties } from "react"
 import LanguageItem, { Language } from "./LanguageItem"
+import { useMediaQuery } from "usehooks-ts"
 
 const languages: Language[] = [
   {
@@ -16,15 +17,20 @@ const sectionStyles = {
   paddingTop: "40px",
   paddingBottom: "30px",
 }
-const titleStyles = {
-  marginBottom: "70px",
-}
 const languageWrapperStyles = {
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "center",
-}
+} as CSSProperties
 const MyLanguages = () => {
+  const matchesMin768 = useMediaQuery("(min-width: 768px)")
+
+  const titleStyles = matchesMin768
+    ? {
+        marginBottom: "70px",
+      }
+    : { marginBottom: "40px" }
+
   return (
     <section style={sectionStyles}>
       <h2 className="center" style={titleStyles}>

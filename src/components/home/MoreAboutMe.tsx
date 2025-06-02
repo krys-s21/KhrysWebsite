@@ -1,16 +1,29 @@
 import React from "react"
+import { useMediaQuery } from "usehooks-ts"
 
 const MoreAboutMe = () => {
-  const sectionStyles = {
-    margin: "120px 0",
-    marginBottom: "150px",
-  }
-  const textStyles = {
-    padding: "0 50px",
-  }
+  const matchesMin768 = useMediaQuery("(min-width: 768px)")
+
+  const sectionStyles = matchesMin768
+    ? {
+        margin: "120px 0",
+        marginBottom: "150px",
+      }
+    : {
+        margin: "70px 0",
+        marginBottom: "80px",
+      }
+
+  const textStyles = matchesMin768
+    ? {
+        padding: "0 50px",
+      }
+    : {
+        padding: "0",
+      }
   return (
     <section style={sectionStyles}>
-      <div className="container">
+      <div className="smallContainer">
         <h2 className="extraH2 center gradientText">More about me</h2>
         <p className="center" style={textStyles}>
           Inspired by a childhood love for programming, I've shaped my skills
