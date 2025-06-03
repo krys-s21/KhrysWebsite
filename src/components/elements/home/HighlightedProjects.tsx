@@ -6,7 +6,7 @@ const projects: Project[] = [
   {
     id: 2,
     name: "YMC",
-    image: "/assets/images/projects/YMC2.png",
+    image: "/images/projects/YMC2.png",
     shortDescription:
       "Genuinely in love with the outcome of this full UI implementation, adding section animations for a pleasant UX.",
     description: "",
@@ -14,7 +14,7 @@ const projects: Project[] = [
   {
     id: 1,
     name: "Hermes Protocol",
-    image: "/assets/images/projects/hermes.png",
+    image: "/images/projects/hermes.png",
     shortDescription:
       "At Momentum One, I led project implementation, influencing design and UX decisions. Exciting journey!",
     description: "",
@@ -22,7 +22,7 @@ const projects: Project[] = [
   {
     id: 3,
     name: "Heden",
-    image: "/assets/images/projects/heden.png",
+    image: "/images/projects/heden.png",
     shortDescription:
       "As a freelancer, I crafted this appealing, clean UI with CMS settings for seamless content management.",
     description: "",

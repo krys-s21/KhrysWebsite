@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react"
-import borderGradient from "/assets/images/heroImage.svg"
-import linkedin from "/assets/images/linkedin.svg"
-import github from "/assets/images/github.svg"
+import borderGradient from "/images/heroImage.svg"
+import linkedin from "/images/linkedin.svg"
+import github from "/images/github.svg"
 import { useMediaQuery } from "usehooks-ts"
 import { githubProfile, linkedinProfile } from "../../constants"
 

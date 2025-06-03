@@ -1,13 +1,10 @@
 import React from "react"
 import Navbar from "../Navbar"
-import heroImage from "/assets/images/heroImage.svg"
+import heroImage from "/images/heroImage.svg"
 import { useMediaQuery } from "usehooks-ts"
 
 const HeroWithNavbar = () => {
-  const matchesMin768 = useMediaQuery("(min-width: 768px)")
   const matchesMin992 = useMediaQuery("(min-width: 992px)")
-  const matchesMin1200 = useMediaQuery("(min-width: 1200px)")
-  const matchesMin1500 = useMediaQuery("(min-width: 1500px)")
 
   const heroStyles = matchesMin992
     ? {

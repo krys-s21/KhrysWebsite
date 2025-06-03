@@ -10,7 +10,7 @@ import Footer from "../elements/Footer"
 
 export const Home: FunctionComponent = () => {
   return (
-    <div id="Home">
+    <div id="home">
       <HeroWithNavbar />
       <MoreAboutMe />
       <HighlightedProjects />
