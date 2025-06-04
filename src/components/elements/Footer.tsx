@@ -92,7 +92,7 @@ const Footer = () => {
       <div style={wrapperStyle}>
         <div style={borderStyles}>
           <div style={itemStyle}>
-            <h2 style={titleStyles}>Did you enjoy what you've seen?</h2>
+            <h2 style={titleStyles}>Ready to make something great together?</h2>
             <button className="btn btn-xl btn-cta" style={btnStyles}>
               Let's talk!
             </button>

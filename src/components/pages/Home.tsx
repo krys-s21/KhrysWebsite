@@ -4,9 +4,9 @@ import MoreAboutMe from "../elements/home/MoreAboutMe"
 import React from "react"
 import HighlightedProjects from "../elements/home/HighlightedProjects"
 import MyTechStack from "../elements/home/MyTechStack"
-import MyHumanSkills from "../elements/home/MyTechStack"
 import MyLanguages from "../elements/home/MyLanguages"
 import Footer from "../elements/Footer"
+import MyHumanSkills from "../elements/home/MyHumanSkills"
 
 export const Home: FunctionComponent = () => {
   return (
