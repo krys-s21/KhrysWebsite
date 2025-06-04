@@ -1,6 +1,6 @@
 import { Project } from "./types/general"
 
-export const linkedinProfile = "www.linkedin.com/in/khrystyna-quirino"
+export const linkedinProfile = "https://www.linkedin.com/in/khrystyna-quirino"
 export const githubProfile = "https://github.com/krys-s21"
 
 export const projects: Project[] = [
