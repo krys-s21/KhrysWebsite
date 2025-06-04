@@ -3,14 +3,7 @@ import borderGradient from "/images/heroImage.svg"
 import borderGradientRotated from "/images/heroImageRotated.svg"
 import textGradient from "/images/textGradient.png"
 import { useMediaQuery } from "usehooks-ts"
-
-export interface Project {
-  id: number
-  name: string
-  image: string
-  shortDescription: string
-  description: string
-}
+import { Project } from "../../../types/general"
 
 const itemStyle = {
   backgroundColor: "white",

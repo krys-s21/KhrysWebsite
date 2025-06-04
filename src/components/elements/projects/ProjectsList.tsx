@@ -1,16 +1,7 @@
 import React, { CSSProperties } from "react"
-import ProjectItem from "../projects/ProjectItem"
 import { useMediaQuery } from "usehooks-ts"
-import { highlightedProjects } from "../../../constants"
-
-const titleStyles = {
-  marginBottom: "50px",
-}
-
-const footerTextStyles = {
-  lineHeight: "1.6",
-  padding: "0 30px",
-}
+import { projects } from "../../../constants"
+import ProjectItem from "./ProjectItem"
 
 const HighlightedProjects = () => {
   const matchesMin768 = useMediaQuery("(min-width: 768px)")
@@ -36,20 +27,12 @@ const HighlightedProjects = () => {
   return (
     <section style={sectionStyles}>
       <div className="container">
-        <h2 className="center" style={titleStyles}>
-          Some of my projects
-        </h2>
-      </div>
-      <div style={projectsWrapperStyles}>
-        {highlightedProjects &&
-          highlightedProjects.map((project) => (
-            <ProjectItem key={project.id} project={project} />
-          ))}
-      </div>
-      <div className="center" style={footerTextStyles}>
-        Feeling curious for more projects?
-        <br />
-        Take a moment to wander through <a>my portfolio</a>.
+        <div style={projectsWrapperStyles}>
+          {projects &&
+            projects.map((project) => (
+              <ProjectItem key={project.id} project={project} />
+            ))}
+        </div>
       </div>
     </section>
   )
