@@ -26,12 +26,14 @@ const HighlightedProjects = () => {
 
   return (
     <section style={sectionStyles}>
-      <div className="container">
+      <div className="small-container">
         <div style={projectsWrapperStyles}>
           {projects &&
-            projects.map((project) => (
-              <ProjectItem key={project.id} project={project} />
-            ))}
+            projects
+              .sort((a, b) => b.id - a.id)
+              .map((project) => (
+                <ProjectItem key={project.id} project={project} />
+              ))}
         </div>
       </div>
     </section>

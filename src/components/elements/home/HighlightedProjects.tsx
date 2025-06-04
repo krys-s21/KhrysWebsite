@@ -2,6 +2,7 @@ import React, { CSSProperties } from "react"
 import ProjectItem from "../projects/ProjectItem"
 import { useMediaQuery } from "usehooks-ts"
 import { highlightedProjects } from "../../../constants"
+import { Link } from "react-router-dom"
 
 const titleStyles = {
   marginBottom: "50px",
@@ -47,9 +48,11 @@ const HighlightedProjects = () => {
           ))}
       </div>
       <div className="center" style={footerTextStyles}>
-        Feeling curious for more projects?
-        <br />
-        Take a moment to wander through <a>my portfolio</a>.
+        <div>Feeling curious for more projects?</div>
+        <div>
+          Take a moment to wander through{" "}
+          <Link to="/portfolio">my portfolio</Link>.
+        </div>
       </div>
     </section>
   )

@@ -11,7 +11,9 @@ const itemStyle = {
   paddingBottom: "50px",
   textAlign: "center",
   borderRadius: "20px",
+  height: "calc(100% - 80px)",
 } as CSSProperties
+
 const imageStyles = {
   width: "100%",
   borderRadius: "5px",
@@ -48,6 +50,7 @@ const ProjectItem: React.FC<{ project: Project }> = ({ project }) => {
         backgroundSize: "cover",
         margin: "0 25px",
         marginBottom: "70px",
+        height: "calc(100% - 90px)",
       }
     : {
         borderRadius: "30px",

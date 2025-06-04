@@ -32,26 +32,37 @@ const HeroWithNavbar = () => {
         paddingTop: "10px",
         paddingBottom: "15px",
       }
-  const titleStyles = {
-    fontWeight: "400",
+  const titleBaseStyles = {
+    display: "block",
+    fontWeight: "500",
   }
-  const heyStyles = matchesMin992
+  const titleStyles = matchesMin992
     ? {
-        display: "block",
+        ...titleBaseStyles,
         marginBottom: "3rem",
       }
     : {
-        display: "block",
+        ...titleBaseStyles,
         marginBottom: "1rem",
       }
+  const subtitleStyles = matchesMin992
+    ? {
+        fontSize: "3.214rem",
+      }
+    : {
+        fontSize: "1.5rem",
+      }
+
   return (
     <header style={heroStyles}>
       <div className="container">
         <Navbar />
         <div className="textWhite" style={textWrapperStyles}>
-          <h1 style={titleStyles}>
-            <span style={heyStyles}>My projects</span>
-          </h1>
+          <h1 style={titleStyles}>My Portfolio</h1>
+          <p style={subtitleStyles}>
+            I’ve worked with development companies and as a freelancer to bring
+            impactful projects to life — explore a few of them here.
+          </p>
         </div>
       </div>
     </header>

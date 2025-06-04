@@ -80,7 +80,7 @@ const Footer = () => {
   const titleStyles = matchesMin992
     ? {
         marginTop: "80px",
-        fontSize: "3.25rem",
+        fontSize: "3rem",
       }
     : {
         marginTop: "50px",
