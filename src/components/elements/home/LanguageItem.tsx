@@ -1,4 +1,4 @@
-import React from "react"
+import React, { CSSProperties } from "react"
 
 export interface Language {
   id: number
@@ -14,7 +14,7 @@ const itemWrapperStyles = {
 const itemStyles = {
   padding: "0 20px",
   textAlign: "center",
-}
+} as CSSProperties
 
 const LanguageItem: React.FC<{
   language: Language
