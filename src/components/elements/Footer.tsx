@@ -94,7 +94,7 @@ const Footer = () => {
           <div style={itemStyle}>
             <h2 style={titleStyles}>Ready to make something great together?</h2>
             <button className="btn btn-xl btn-cta" style={btnStyles}>
-              Let's talk!
+              <a href={linkedinProfile}>Let's talk!</a>
             </button>
             <div style={socialWrapperStyles}>
               {socialAccounts.map((social) => (

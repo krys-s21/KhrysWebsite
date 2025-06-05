@@ -11,14 +11,18 @@ export const projects: Project[] = [
     shortDescription:
       "Rethinking e-commerce with a flexible, mix & match experience driven by users.",
     description: "",
+    showMore: false,
+    images: [],
   },
   {
     id: 2,
     name: "La Piadina",
     image: "/images/projects/la_piadina.png",
     shortDescription:
-      "Bold visuals, big typography, and playful transitions—La Piadina’s site still serves up the same charm years later.",
+      "Bold visuals, big typography, and playful transitions — La Piadina’s site still serves up the same charm years later.",
     description: "",
+    showMore: false,
+    images: [],
   },
   {
     id: 3,
@@ -27,6 +31,8 @@ export const projects: Project[] = [
     shortDescription:
       "A clean, elegant e-commerce experience—rooted in timeless design principles.",
     description: "",
+    showMore: false,
+    images: [],
   },
   // {
   //   id: 4,
@@ -42,6 +48,8 @@ export const projects: Project[] = [
     shortDescription:
       "As a freelancer, I crafted this appealing, clean UI with CMS settings for seamless content management.",
     description: "",
+    showMore: false,
+    images: [],
   },
   {
     id: 6,
@@ -50,6 +58,8 @@ export const projects: Project[] = [
     shortDescription:
       "Genuinely in love with the outcome of this full UI implementation, adding section animations for a pleasant UX.",
     description: "",
+    showMore: true,
+    images: [],
   },
   {
     id: 7,
@@ -58,6 +68,8 @@ export const projects: Project[] = [
     shortDescription:
       "At Momentum One, I led project implementation, influencing design and UX decisions. Exciting journey!",
     description: "",
+    showMore: false,
+    images: [],
   },
   {
     id: 8,
@@ -66,6 +78,8 @@ export const projects: Project[] = [
     shortDescription:
       "From zero to launch—co-designed Iris with a collaborative, agile, cross-functional team.",
     description: "",
+    showMore: false,
+    images: [],
   },
 ]
 export const highlightedProjects: Project[] = [
@@ -76,14 +90,18 @@ export const highlightedProjects: Project[] = [
     shortDescription:
       "Genuinely in love with the outcome of this full UI implementation, adding section animations for a pleasant UX.",
     description: "",
+    showMore: true,
+    images: [],
   },
   {
     id: 8,
     name: "Iris by Unlockit",
     image: "/images/projects/unlockit.png",
     shortDescription:
-      "From zero to launch—co-designed Iris with a collaborative, agile, cross-functional team.",
+      "From zero to launch — co-designed and developed Iris with a collaborative, agile, cross-functional team.",
     description: "",
+    showMore: false,
+    images: [],
   },
   {
     id: 6,
@@ -92,5 +110,7 @@ export const highlightedProjects: Project[] = [
     shortDescription:
       "As a freelancer, I crafted this appealing, clean UI with CMS settings for seamless content management.",
     description: "",
+    showMore: false,
+    images: [],
   },
 ]

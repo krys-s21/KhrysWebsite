@@ -77,9 +77,13 @@ const ProjectItem: React.FC<{ project: Project }> = ({ project }) => {
             {project.name}
           </h3>
           <p>{project.shortDescription.slice(0, 120)}</p>
-          {/* <button className="btn" style={btnStyles}>
-            See more
-          </button> */}
+          <button
+            disabled={project.showMore ? false : true}
+            className="btn"
+            style={btnStyles}
+          >
+            {project.showMore ? "See more" : "Coming soon"}
+          </button>
         </div>
       </div>
     </div>
