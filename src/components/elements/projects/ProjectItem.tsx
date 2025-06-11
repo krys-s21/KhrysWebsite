@@ -86,7 +86,7 @@ const ProjectItem: React.FC<{ project: Project }> = ({ project }) => {
             className="btn"
             style={btnStyles}
           >
-            {project.showMore ? "See more" : "Coming soon"}
+            {project.showMore ? "See more" : "More details soon"}
           </button>
         </div>
       </div>
