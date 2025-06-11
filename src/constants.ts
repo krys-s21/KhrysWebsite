@@ -76,7 +76,7 @@ export const projects: Project[] = [
     name: "Iris by Unlockit",
     image: "/images/projects/unlockit.png",
     shortDescription:
-      "From zero to launch—co-designed Iris with a collaborative, agile, cross-functional team.",
+      "From zero to launch — co-designed and developed Iris with a collaborative, agile, cross-functional team.",
     description: "",
     showMore: false,
     images: [],

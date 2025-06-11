@@ -166,6 +166,8 @@ a:focus {
 .maxWidthFull {
   max-width: 100%;
 }
+
+/* Navbar */
 #navbar ul li {
   display: inline-block;
   margin: 0 5px;
@@ -183,6 +185,21 @@ a:focus {
 #navbar ul li a.active {
   background-color: #ffffff;
   color: black;
+}
+
+/* Portfolio */
+
+#portfolio #header {
+  position: relative;
+}
+#portfolio #header:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  background: linear-gradient(transparent, #fafafa);
 }
 /* Tablet - md breakpoint */
 @media only screen and (min-width: 768px) {

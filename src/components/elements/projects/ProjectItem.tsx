@@ -35,11 +35,15 @@ const ProjectItem: React.FC<{ project: Project }> = ({ project }) => {
     ? {
         width: "33%",
         maxWidth: "630px",
+        position: "relative",
+        zIndex: "2",
       }
     : {
         width: "100%",
         maxWidth: "630px",
         margin: "0 auto",
+        position: "relative",
+        zIndex: "2",
       }
 
   const borderBaseStyles = matchesMin768
@@ -69,7 +73,7 @@ const ProjectItem: React.FC<{ project: Project }> = ({ project }) => {
     backgroundImage: `url(${borderGradientRotated})`,
   }
   return (
-    <div style={wrapperStyle}>
+    <div style={wrapperStyle as CSSProperties}>
       <div style={project.id % 2 === 0 ? borderRotatedStyles : borderStyles}>
         <div style={itemStyle}>
           <img alt={project.name} src={project.image} style={imageStyles} />

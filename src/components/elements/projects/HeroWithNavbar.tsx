@@ -14,6 +14,7 @@ const HeroWithNavbar = () => {
         backgroundRepeat: "no-repat",
         backgroundPosition: "center",
         backgroundSize: "cover",
+        marginBottom: "-200px",
       }
     : {
         margin: "15px",
@@ -22,15 +23,16 @@ const HeroWithNavbar = () => {
         backgroundRepeat: "no-repat",
         backgroundPosition: "10% 50%",
         backgroundSize: "cover",
+        marginBottom: "-200px",
       }
   const textWrapperStyles = matchesMin992
     ? {
         paddingTop: "50px",
-        paddingBottom: "120px",
+        paddingBottom: "200px",
       }
     : {
         paddingTop: "10px",
-        paddingBottom: "15px",
+        paddingBottom: "200px",
       }
   const titleBaseStyles = {
     display: "block",
@@ -54,7 +56,7 @@ const HeroWithNavbar = () => {
       }
 
   return (
-    <header style={heroStyles}>
+    <header id="header" style={heroStyles}>
       <div className="container">
         <Navbar />
         <div className="textWhite" style={textWrapperStyles}>
