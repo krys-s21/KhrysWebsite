@@ -58,7 +58,7 @@ export const projects: Project[] = [
     shortDescription:
       "Genuinely in love with the outcome of this full UI implementation, adding section animations for a pleasant UX.",
     description: "",
-    showMore: true,
+    showMore: false,
     images: [],
   },
   {
@@ -90,7 +90,7 @@ export const highlightedProjects: Project[] = [
     shortDescription:
       "Genuinely in love with the outcome of this full UI implementation, adding section animations for a pleasant UX.",
     description: "",
-    showMore: true,
+    showMore: false,
     images: [],
   },
   {
